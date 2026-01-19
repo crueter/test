@@ -1,0 +1,16 @@
+name: common shell stuff
+
+runs:
+  using: composite
+  steps:
+    - name: Define functions
+      run: |
+        what() {
+          echo "What?"
+        }
+
+        hello() {
+          echo "Hello!"
+        }
+
+        export -f what hello
